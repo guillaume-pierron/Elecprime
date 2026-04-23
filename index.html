@@ -271,25 +271,29 @@
     .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 64px; }
     .hero-badges {
       display: flex;
-      gap: 32px;
-      flex-wrap: wrap;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: nowrap;
     }
     .hero-badge {
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
     }
     .hero-badge strong {
       font-family: 'Montserrat', sans-serif;
       font-size: 1.6rem;
       font-weight: 800;
+      line-height: 1;
       color: var(--gold);
     }
     .hero-badge span {
       font-size: .78rem;
       color: var(--text-muted);
       letter-spacing: .05em;
+      margin-top: 4px;
     }
-    .hero-badge-sep { width: 1px; background: var(--mid); align-self: stretch; }
+    .hero-badge-sep { width: 1px; height: 44px; background: var(--mid); flex-shrink: 0; }
 
     /* floating bolt */
     .hero-bolt {
